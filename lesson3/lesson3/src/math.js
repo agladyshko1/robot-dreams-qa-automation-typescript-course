@@ -1,0 +1,34 @@
+let a = 5;
+const b = '6';
+const c = 7;
+const d = '7';
+const d1 = 'hello';
+
+console.log(a + b);
+console.log(a + c);
+console.log(a - b);
+console.log(b - d);
+console.log(b - d1, typeof(b - d1));
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+console.log(a ** b);
+console.log('----------------');
+a += a;
+console.log(a);
+a -= a;
+a = 5;
+console.log(a);
+a *= a;
+console.log(a);
+a /= a;
+console.log(a);
+a %= a;
+console.log(a);
+a = 5;
+a **= a;
+console.log(a);
+
+
+const mathOh = Math.cos(0.9);
+console.log(mathOh);
