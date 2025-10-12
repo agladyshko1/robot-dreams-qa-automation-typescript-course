@@ -1,37 +1,46 @@
-let valueNumberOne = 5;
-let valueNumberTwo = 10;
-let valueStringOne = '5';
-let valueStringTwo = 'string';
+let a = 5;
+let b = 10;
+let c = '5';
+let d = 'string';
 
-console.log(valueNumberOne + " + " + valueNumberTwo + " = " + (valueNumberOne + valueNumberTwo));
-console.log(valueNumberOne + " + " + valueStringOne + " = " + (valueNumberOne + valueStringOne));
-console.log(valueNumberOne + " - " + valueNumberTwo + " = " + (valueNumberOne - valueNumberTwo));
-console.log(valueStringTwo + " - " + valueStringOne + " = " + (valueStringTwo - valueStringOne));
-console.log(valueNumberOne + " - " + valueStringOne + " = " + (valueNumberOne - valueStringOne), typeof(valueNumberOne - valueStringOne));
+console.log(a, " + ", b, " = ", (a + b));
+console.log(a, " + ", c, " = ", (a + c));
+console.log(a, " - ", b, " = ", (a - b));
+console.log(a, " - ", c, " = ", (a - c), ',', typeof(a - c));
+console.log(a, " * ", b, " = ", (a * b));
+console.log(a, " / ", b, " = ", (a / b));
+console.log(a, " % ", b, " = ", (a % b));
+console.log(a, " ** ", b, " = ", (a ** b));
+console.log(a, " - ", d, " = ", (a - d));
+console.log(a, " + ", d, " = ", (a + d));
+console.log(b, " * ", d, " = ", (b * d));
+console.log(c, " % ", d, " = ", (c % d));
 
-
-console.log('valueNumberOne * valueNumberTwo = ', valueNumberOne * valueNumberTwo);
-console.log('valueNumberOne / valueNumberTwo = ', valueNumberOne / valueNumberTwo);
-console.log('valueNumberOne % valueNumberTwo = ', valueNumberOne % valueNumberTwo);
-console.log('valueNumberOne ** valueNumberTwo = ', valueNumberOne ** valueNumberTwo);
 
 console.log('----------------');
 
-valueNumberOne += valueNumberOne;
-console.log('valueNumberOne + valueNumberTwo = ', valueNumberOne);
+a += a;
+console.log('a + a = ', a);
+
+a -= a;
+console.log('a - a = ', a);
+
+a = 5;
+a *= a;
+console.log('a * a = ', a);
+
+a /= a;
+console.log('a / a = ', a);
+
+a = 5;
+a %= a;
+console.log('a % a = ', a);
+
+a = 5;
+a **= a;
+console.log('a ** a = ', a);
+
+d *= d;
+console.log('d * d = ', d);
 
 
-// a += a;
-// console.log(a);
-// a -= a;
-// a = 5;
-// console.log(a);
-// a *= a;
-// console.log(a);
-// a /= a;
-// console.log(a);
-// a %= a;
-// console.log(a);
-// a = 5;
-// a **= a;
-// console.log(a);
