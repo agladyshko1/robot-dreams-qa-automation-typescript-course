@@ -1,5 +1,4 @@
-# js-eslint-config
-recommended config from me for programming on a JavaScript
+# lesson 3 Variables, Operators, Decision trees
 
 In order to use this config you have to install the following NPM packages
 ```
