@@ -43,5 +43,12 @@ console.log(objKeys, objValues, objEntries);
 
 console.log(Object.keys(obj.key4)); // Виводить масив ключів вкладеного об'єкта
 
-
+console.log('---function with method ---');
+const objWithMethod = structuredClone(obj);
+objWithMethod.objMethod = function () {
+    console.log('objMethod');
+    console.log(this);
+    console.log(this.key1);
+};
+objWithMethod.objMethod();
 
