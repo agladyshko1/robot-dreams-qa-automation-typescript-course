@@ -71,4 +71,26 @@ const book = {
 };
 book.title = 'big title';
 console.log(book.title);
+console.log('------------');
 
+
+const cart = {
+    _item: [],
+    set addItem(value) {
+        if (value > 0) {
+            this._item.push(value);
+        } else console.log('Item < 0');
+    },
+    get total() {
+        let counter = 0;
+        for (const value of this._item) {
+            counter += value;
+        }
+        return counter;
+    }
+};
+cart.addItem = 5;
+cart.addItem = -5;
+cart.addItem = 17;
+cart.addItem = -10;
+console.log(cart.total);
